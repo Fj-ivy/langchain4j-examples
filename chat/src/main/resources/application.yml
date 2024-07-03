@@ -1,0 +1,10 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: chat-service
+langchain4j:
+  ollama:
+    chat-model:
+      base-url: http://localhost:11434
+      model-name: qwen:7b
