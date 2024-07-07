@@ -1,0 +1,10 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: chat-high-level-service
+langchain4j:
+  open-ai:
+    chat-model:
+      api-key: xxxxxx
+      base-url: xxxxxx

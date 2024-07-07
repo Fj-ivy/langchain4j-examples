@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/hl")
 @RestController
-public class HighLevelChatController {
+public class ChatController {
     private final Assistant assistant;
 
-    public HighLevelChatController(Assistant assistant) {
+    public ChatController(Assistant assistant) {
         this.assistant = assistant;
     }
 

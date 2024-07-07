@@ -1,4 +1,4 @@
-package org.ivy.lowlevel;
+package org.ivy.controller;
 
 import dev.langchain4j.model.ollama.OllamaChatModel;
 import dev.langchain4j.model.openai.OpenAiChatModel;
@@ -8,22 +8,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/ll/")
 @RestController
-public class LowLevelChatController {
-    private final OpenAiChatModel openAiChatModel;
-    private final OllamaChatModel ollamaChatModel;
+public class ChatController {
 
-    public LowLevelChatController(OpenAiChatModel openAiChatModel,
-                                  OllamaChatModel ollamaChatModel) {
-        this.openAiChatModel = openAiChatModel;
+    private final OllamaChatModel ollamaChatModel;
+    private final OpenAiChatModel openAiChatModel;
+
+    public ChatController(OllamaChatModel ollamaChatModel, OpenAiChatModel openAiChatModel) {
         this.ollamaChatModel = ollamaChatModel;
+        this.openAiChatModel = openAiChatModel;
     }
 
-    @GetMapping("ollama-chat")
-    public String ollamaChat(String prompt) {
+    @GetMapping("chat")
+    public String chat(String prompt) {
         return ollamaChatModel.generate(prompt);
     }
 
-    @GetMapping("open-ai-chat")
+    @GetMapping("openai/chat")
     public String openAiChat(String prompt) {
         return openAiChatModel.generate(prompt);
     }

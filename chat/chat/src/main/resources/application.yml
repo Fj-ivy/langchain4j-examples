@@ -8,3 +8,7 @@ langchain4j:
     chat-model:
       base-url: http://localhost:11434
       model-name: qwen:7b
+  open-ai:
+    chat-model:
+      api-key: xxxxxx
+      base-url: xxxxxx

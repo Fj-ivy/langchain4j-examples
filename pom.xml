@@ -15,7 +15,8 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>chat</module>
+        <module>chat/chat</module>
+        <module>chat/chat-high-level</module>
     </modules>
 
     <properties>

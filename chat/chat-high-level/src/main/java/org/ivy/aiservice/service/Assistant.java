@@ -9,7 +9,6 @@ import dev.langchain4j.service.spring.AiServiceWiringMode;
 @AiService(
         wiringMode = AiServiceWiringMode.EXPLICIT,
         chatModel = "openAiChatModel",
-        chatMemory = "chatMemory",
         tools = {"calculator"}
 )
 public interface Assistant {
