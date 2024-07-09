@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: chatmemory-eachuser
+
+server:
+  port: 8803
+
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: xxxxxx
+      api-key: xxxxxx
