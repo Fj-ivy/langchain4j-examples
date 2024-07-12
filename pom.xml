@@ -21,6 +21,7 @@
         <module>memory/chatmemory-eachuser</module>
         <module>memory/chatmemory-persistent</module>
         <module>tools</module>
+        <module>structured-output</module>
     </modules>
 
     <properties>
