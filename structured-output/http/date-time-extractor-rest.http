@@ -1,0 +1,10 @@
+GET http://localhost:8806/extract-date?prompt=The tranquility pervaded the evening of 1968, just fifteen minutes shy of midnight," +
+                    " following the celebrations of Independence Day.
+
+### 测试返回 LocalTime 类型的时间
+GET http://localhost:8806/extract-time?prompt=The tranquility pervaded the evening of 1968, just fifteen minutes shy of midnight," +
+                    " following the celebrations of Independence Day.
+
+### 测试返回 LocalDateTime 类型的时间
+GET http://localhost:8806/extract-datetime?prompt=The tranquility pervaded the evening of 1968, just fifteen minutes shy of midnight," +
+                    " following the celebrations of Independence Day.

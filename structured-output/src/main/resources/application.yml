@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: structured-output
+
+server:
+  port: 8806
+
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: xxxx
+      api-key: xxxx

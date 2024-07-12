@@ -1,0 +1,8 @@
+### 测试返回布尔值
+GET http://localhost:8806/boolean?prompt=This is great!
+### 测试返回布尔值
+GET http://localhost:8806/boolean?prompt=It's awful!
+### 测试返回枚举值
+GET http://localhost:8806/enum?prompt=This is great!
+### 测试返回枚举值
+GET http://localhost:8806/enum?prompt=I don't know.

@@ -1,0 +1,10 @@
+GET localhost:8806/pojo?prompt="In 1968, amidst the fading echoes of Independence Day, "
+                    + "a child named John arrived under the calm evening sky. "
+                    + "This newborn, bearing the surname Doe, marked the start of a new journey."
+accept: application/json
+
+### 黄瓜、番茄、羊奶酪、洋葱、橄榄
+GET http://localhost:8806/recipe?prompt="cucumber", "tomato", "feta", "onion", "olives"
+
+###
+GET http://localhost:8806/recipe2?prompt=["cucumber", "tomato", "feta", "onion", "olives"]

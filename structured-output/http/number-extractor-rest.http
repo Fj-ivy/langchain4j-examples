@@ -1,0 +1,20 @@
+### 测试返回int值
+GET http://localhost:8806/int?prompt="After countless millennia of computation, the supercomputer Deep Thought finally announced " +
+                    "that the answer to the ultimate question of life, the universe, and everything was forty two."
+### 测试返回BigInteger值
+GET http://localhost:8806/integer?prompt="After countless millennia of computation, the supercomputer Deep Thought finally announced " +
+                    "that the answer to the ultimate question of life, the universe, and everything was forty two."
+### 测试返回float值
+GET http://localhost:8806/float?prompt="After countless millennia of computation, the supercomputer Deep Thought finally announced " +
+                    "that the answer to the ultimate question of life, the universe, and everything was forty two."
+### 测试返回double值
+GET http://localhost:8806/double?prompt="After countless millennia of computation, the supercomputer Deep Thought finally announced " +
+                    "that the answer to the ultimate question of life, the universe, and everything was forty two."
+
+### 测试返回lōng值
+GET http://localhost:8806/long?prompt="After countless millennia of computation, the supercomputer Deep Thought finally announced " +
+                    "that the answer to the ultimate question of life, the universe, and everything was forty two."
+
+### 测试返回BigDecimal值
+GET http://localhost:8806/bigDecimal?prompt="After countless millennia of computation, the supercomputer Deep Thought finally announced " +
+                    "that the answer to the ultimate question of life, the universe, and everything was forty two."
