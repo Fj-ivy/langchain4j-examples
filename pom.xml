@@ -22,6 +22,7 @@
         <module>memory/chatmemory-persistent</module>
         <module>tools</module>
         <module>structured-output</module>
+        <module>template</module>
     </modules>
 
     <properties>

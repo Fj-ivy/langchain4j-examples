@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: template
+
+server:
+  port: 8807
+
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: xxx
+      api-key: xxx
