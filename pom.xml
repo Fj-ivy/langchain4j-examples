@@ -23,13 +23,14 @@
         <module>tools</module>
         <module>structured-output</module>
         <module>template</module>
+        <module>image</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <langchain4j.version>0.31.0</langchain4j.version>
+        <langchain4j.version>0.32.0</langchain4j.version>
     </properties>
 
     <dependencies>

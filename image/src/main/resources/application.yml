@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: image-service
+
+server:
+  port: 8808
+
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: xx
+      api-key: xxx
+    image-model:
+      base-url: xx
+      api-key: xx
