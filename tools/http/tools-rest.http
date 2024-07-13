@@ -1,0 +1,2 @@
+###
+GET localhost:8805/cal?prompt=Calculates the sum of two numbers 2 and 10
