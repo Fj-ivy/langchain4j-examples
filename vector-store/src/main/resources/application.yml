@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: vector-store
+
+langchain4j:
+  ollama:
+    embedding-model:
+      base-url: http://localhost:11434
+      model-name: qwen:7b
+  milvus:
+    host: 127.0.0.1
+    port: 19530
+    database-name: milvus_embedding
+    dimension: 384
+
+
+server:
+  port: 8808

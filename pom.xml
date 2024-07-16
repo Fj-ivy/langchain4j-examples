@@ -17,13 +17,14 @@
     <modules>
         <module>chat/chat</module>
         <module>chat/chat-high-level</module>
-        <module>memory/chatmemory</module>
-        <module>memory/chatmemory-eachuser</module>
-        <module>memory/chatmemory-persistent</module>
+        <module>memory/chat-memory</module>
+        <module>memory/chat-memory-each-user</module>
+        <module>memory/chat-memory-persistent</module>
         <module>tools</module>
         <module>structured-output</module>
         <module>template</module>
         <module>image</module>
+        <module>vector-store</module>
     </modules>
 
     <properties>

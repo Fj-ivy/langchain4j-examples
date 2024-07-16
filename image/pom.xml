@@ -17,24 +17,7 @@
         <dependency>
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-open-ai-spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-azure-open-ai</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-zhipu-ai</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-vertex-ai</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-workers-ai</artifactId>
+            <version>0.32.0</version>
         </dependency>
     </dependencies>
 </project>

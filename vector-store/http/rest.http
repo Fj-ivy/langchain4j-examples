@@ -1,0 +1,28 @@
+POST http://localhost:8808/embed
+content-type: application/json
+
+{
+  "text": "I like football."
+}
+
+###
+POST http://localhost:8808/embed-meta
+content-type: application/json
+
+{
+  "text": "I like football."
+}
+
+###
+POST http://localhost:8808/embed-meta
+content-type: application/json
+
+{
+  "text": "The weather is good today."
+}
+
+
+### 查询
+
+GET http://localhost:8808/search?text=What is your favourite sport?
+
