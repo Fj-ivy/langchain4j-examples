@@ -1,0 +1,17 @@
+GET /classify/sentiment?text=Awesome! HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+###
+GET /classify/sentiment?text=I love it HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+GET /classify/sentiment?text=Worst website ever! HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+GET /classify/service?text=Yo where is my package? HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json

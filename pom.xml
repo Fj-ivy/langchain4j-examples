@@ -25,6 +25,7 @@
         <module>template</module>
         <module>image</module>
         <module>vector-store</module>
+        <module>classification</module>
     </modules>
 
     <properties>

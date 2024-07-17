@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: classification
+
+langchain4j:
+  ollama:
+    embedding-model:
+      base-url: http://localhost:11434
+      model-name: qwen:7b
