@@ -1,0 +1,13 @@
+######### graalvm code execute http rest api ######
+### javascript
+GET localhost:8080/graalvm/js?message=What is the square root of 485906798473894056 in scientific notation?
+### python
+GET localhost:8080/graalvm/python?message=What is the square root of 485906798473894056 in scientific notation?
+
+######### judge0 code execute http rest api ######
+GET localhost:8080/judge0/js?message=What is the square root of 485906798473894056 in scientific notation?
+###
+GET localhost:8080/judge0/js?message=Capitalize every third letter: abcabc?
+###
+GET localhost:8080/judge0/js?message=The Length of the string "Hello, World!"?
+

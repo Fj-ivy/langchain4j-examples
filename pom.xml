@@ -26,6 +26,7 @@
         <module>image</module>
         <module>vector-store</module>
         <module>classification</module>
+        <module>code-execute-engine</module>
     </modules>
 
     <properties>

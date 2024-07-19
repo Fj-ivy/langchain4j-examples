@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: code-execute-engine
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: xxxx
+      api-key: xxxx
+
+
