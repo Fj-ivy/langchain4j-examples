@@ -27,6 +27,7 @@
         <module>vector-store</module>
         <module>classification</module>
         <module>code-execute-engine</module>
+        <module>loaders_parsers</module>
     </modules>
 
     <properties>
