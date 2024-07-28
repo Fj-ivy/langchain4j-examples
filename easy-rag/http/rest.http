@@ -1,0 +1,12 @@
+GET http://localhost:8888/embedded
+
+### 测试
+GET http://localhost:8888/chat?message=Java 开发手册当前是什么版本？
+
+###
+GET http://localhost:8888/chat?message=手册的愿景？
+
+####
+GET http://localhost:8888/chat?message=错误码规范都有哪些？
+
+

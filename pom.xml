@@ -28,6 +28,8 @@
         <module>classification</module>
         <module>code-execute-engine</module>
         <module>loaders_parsers</module>
+        <module>reranking</module>
+        <module>easy-rag</module>
     </modules>
 
     <properties>
