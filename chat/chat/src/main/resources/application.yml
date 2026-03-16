@@ -10,5 +10,5 @@ langchain4j:
       model-name: qwen:7b
   open-ai:
     chat-model:
-      api-key: xxxxxx
-      base-url: xxxxxx
+      api-key: demo
+      base-url: http://langchain4j.dev/demo/openai/v1

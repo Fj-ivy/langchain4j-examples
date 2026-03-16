@@ -11,7 +11,7 @@ public class ChatMemoryJavaExample {
     public static void main(String[] args) {
         ChatMemory chatMemory = MessageWindowChatMemory.withMaxMessages(10);
         Assistant assistant = AiServices.builder(Assistant.class)
-                .chatLanguageModel(OpenAiChatModel.builder()
+                .chatModel(OpenAiChatModel.builder()
                         .baseUrl("xxxxxx")
                         .apiKey("xxxxxx")
                         .build()

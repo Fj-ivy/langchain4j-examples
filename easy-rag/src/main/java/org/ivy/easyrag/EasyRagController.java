@@ -27,7 +27,7 @@ public class EasyRagController {
     @GetMapping("/chat")
     public String chat(String message) {
         Assistant assistant = AiServices.builder(Assistant.class)
-                .chatLanguageModel(openAiChatModel)
+                .chatModel(openAiChatModel)
                 .chatMemory(MessageWindowChatMemory.withMaxMessages(10))
                 .contentRetriever(EmbeddingStoreContentRetriever.from(embeddingStore))
                 .build();

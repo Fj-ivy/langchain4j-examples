@@ -20,11 +20,11 @@ public class ChatController {
 
     @GetMapping("chat")
     public String chat(String prompt) {
-        return ollamaChatModel.generate(prompt);
+        return ollamaChatModel.chat(prompt);
     }
 
     @GetMapping("openai/chat")
     public String openAiChat(String prompt) {
-        return openAiChatModel.generate(prompt);
+        return openAiChatModel.chat(prompt);
     }
 }

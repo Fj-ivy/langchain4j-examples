@@ -1,10 +1,10 @@
 package org.ivy.image.service;
 
 import dev.langchain4j.data.image.Image;
-import dev.langchain4j.data.message.AiMessage;
 import dev.langchain4j.data.message.ImageContent;
 import dev.langchain4j.data.message.TextContent;
 import dev.langchain4j.data.message.UserMessage;
+import dev.langchain4j.model.chat.response.ChatResponse;
 import dev.langchain4j.model.openai.OpenAiChatModel;
 import dev.langchain4j.model.openai.OpenAiImageModel;
 import dev.langchain4j.model.output.Response;
@@ -32,7 +32,7 @@ public class ImageService {
                 TextContent.from(prompt),
                 ImageContent.from("https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png")
         );
-        Response<AiMessage> generate = openAiChatModel.generate(userMessage);
-        return generate.content().text();
+        ChatResponse chatResponse = openAiChatModel.chat(userMessage);
+        return chatResponse.aiMessage().text();
     }
 }

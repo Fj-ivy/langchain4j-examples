@@ -16,7 +16,7 @@ public class Judge0ToolService {
 
     public String execute(String message) {
         Assistant assistant = AiServices.builder(Assistant.class)
-                .chatLanguageModel(model)
+                .chatModel(model)
                 .tools(judge0)
                 .chatMemory(MessageWindowChatMemory.withMaxMessages(10))
                 .build();

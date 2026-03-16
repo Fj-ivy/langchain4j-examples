@@ -1,0 +1,6 @@
+
+# curl --location 'http://127.0.0.1:8080/skill/chat?message=Greet%20the%20user'
+GET http://127.0.0.1:8080/skill/chat?message=Greet%20the%20user
+
+###
+

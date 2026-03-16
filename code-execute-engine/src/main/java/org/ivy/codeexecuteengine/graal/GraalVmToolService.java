@@ -18,7 +18,7 @@ public class GraalVmToolService {
 
     public String execute(String text) {
         Assistant assistant = AiServices.builder(Assistant.class)
-                .chatLanguageModel(model)
+                .chatModel(model)
                 .tools(graalVmJavaScriptExecutionTool)
                 .chatMemory(MessageWindowChatMemory.withMaxMessages(10))
                 .build();
@@ -27,7 +27,7 @@ public class GraalVmToolService {
 
     public String executePython(String text) {
         Assistant assistant = AiServices.builder(Assistant.class)
-                .chatLanguageModel(model)
+                .chatModel(model)
                 .tools(graalVmPythonExecutionTool)
                 .chatMemory(MessageWindowChatMemory.withMaxMessages(10))
                 .build();
