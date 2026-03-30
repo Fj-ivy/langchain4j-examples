@@ -1,13 +1,20 @@
 ---
 name: using-process-tool
-description: Describes how to correctly use 'process' tool
+description: "Orchestrates a two-step generate-then-process workflow: calls 'generate' to obtain an ID from a user's name, then calls 'process' with that ID. Handles return codes 17 and 25 with distinct follow-up actions. Use when the user asks to run the process tool, execute the generate-process pipeline, or handle process return codes."
 ---
 
-When user asks you to use the 'process' tool, you need to first call the 'generate' tool with
-2 arguments: arg0 (surname) and arg1 (name).
+## Workflow
 
-When you have an id, call the 'process' tool with 3 arguments:
-arg0 (name), arg1 (id), arg2 (surname).
+1. **Call the `generate` tool** with two arguments to obtain an ID:
+   - `arg0`: surname (e.g., `"Smith"`)
+   - `arg1`: name (e.g., `"John"`)
 
-If 'process' tool returns code 17, proceed with [this](references/17.md) guide,
-if it returns code 25, proceed with [this](references/25.md) guide.
+2. **Call the `process` tool** using the returned ID, with three arguments:
+   - `arg0`: name (e.g., `"John"`)
+   - `arg1`: id (the value returned by `generate`)
+   - `arg2`: surname (e.g., `"Smith"`)
+
+3. **Handle the return code:**
+   - **Code 17** → follow the [code 17 guide](references/17.md) (call `finish`, do **not** call `reset`)
+   - **Code 25** → follow the [code 25 guide](references/25.md) (call `reset`, do **not** call `finish`)
+   - **Other codes** → treat as success; return the result to the user
